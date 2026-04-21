@@ -1,0 +1,40 @@
+.sjs-rail {
+  width: 100px;
+  padding: 24px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sjs-card {
+  flex: 1;
+  margin: 20px 20px 20px 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sjs-card-title {
+  padding: 16px 24px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px dashed var(--dotted-underline);
+}
+
+.sjs-card-body {
+  flex: 1;
+  padding: 20px 24px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+
+.sjs-card-footer {
+  padding: 12px 24px;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,35 @@
+.sjs-prompt {
+  margin: 0 0 16px 0;
+  color: var(--text);
+}
+
+.sjs-prompt > *:first-child { margin-top: 0; }
+.sjs-prompt > *:last-child { margin-bottom: 0; }
+
+.sjs-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sjs-option {
+  display: flex;
+  align-items: center;
+  background: var(--option-bg);
+  color: var(--option-text);
+  border-radius: 6px;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.sjs-option:hover { background:  #a0a2a4; }
+.sjs-option-selected { background: var(--option-selected-bg); }
+
+.sjs-option-id {
+  width: 28px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sjs-option-text { flex: 1; line-height: 1.4; }

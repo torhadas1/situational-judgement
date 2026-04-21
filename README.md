@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Situational Judgement Simulation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React SPA delivering the **Rainforest Restoration Mission** — a 13-question, 20-minute situational-judgement simulation with forward-only navigation and a downloadable CSV answer key.
 
-## Available Scripts
+**Live:** https://torhadas1.github.io/situational-judgement/
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Running locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+cd sjs
+npm install
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Opens at `http://localhost:3000`. The app is fixed at 1120×630 to match the iframe host.
 
-### `npm test`
+## Running tests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+cd sjs
+npm test
+```
 
-### `npm run build`
+26 tests across 6 suites (utils, context, components).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Editing content
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+All mission content lives in `sjs/public/db.json`. The schema:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+missions[] → questions[] → steps[]
+```
 
-### `npm run eject`
+Each step has a `type` field: `narrative`, `pick-one`, `reorder`, or `outcome`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **narrative** — `body` (string, supports `\n\n` paragraph breaks, `- ` bullet lines, `**bold**` headings)
+- **pick-one** — `prompt` + `options[]` (`id` + `text`)
+- **reorder** — `prompt` + `options[]` (`id` + `text`)
+- **outcome** — `variants` object keyed by the pick-one `id` from the same question
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+No code changes needed to add questions or change wording — edit the JSON and reload.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deploying to GitHub Pages
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd sjs
+npm run deploy
+```
 
-## Learn More
+This builds the app and pushes to the `gh-pages` branch of the configured remote. The `homepage` in `package.json` is set to `https://torhadas1.github.io/situational-judgement/`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+On first deploy, enable Pages in the GitHub repo settings: **Settings → Pages → Source: `gh-pages` branch**.

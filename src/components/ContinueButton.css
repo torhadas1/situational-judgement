@@ -1,0 +1,19 @@
+.sjs-continue {
+  background: var(--button-bg);
+  color: var(--button-text);
+  padding: 8px 24px;
+  border-radius: 4px;
+  min-width: 110px;
+  height: 36px;
+  font-weight: 500;
+  transition: transform 0.1s ease;
+}
+.sjs-continue:active:not(.sjs-continue-disabled) {
+  transform: scale(0.98);
+}
+.sjs-continue-disabled {
+  background: var(--button-disabled-bg);
+  color: var(--text);
+  opacity: 0.8;
+  cursor: not-allowed;
+}

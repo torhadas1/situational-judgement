@@ -1,0 +1,298 @@
+{
+  "missions": [
+    {
+      "id": "rainforest",
+      "title": "Rainforest Restoration Mission",
+      "durationMinutes": 20,
+      "questions": [
+        {
+          "id": 1,
+          "steps": [
+            {
+              "type": "narrative",
+              "body": "**Background Information**\n\nThe Kalimara Rainforest is a biodiverse region that has experienced significant degradation due to logging, agricultural expansion, and shifting weather patterns over recent years. These changes have led to declining wildlife populations, reduced soil stability, and increasing variability in local water systems.\n\nYour team has been tasked with developing and executing a plan to restore ecological balance while supporting more sustainable land use practices across the region.\n\nA critical three-day window of favorable weather conditions is expected to begin shortly. This window presents an opportunity to initiate restoration activities such as replanting vegetation and stabilizing soil in priority areas. However, updated forecasts suggest that heavy rainfall may arrive earlier than expected, which could disrupt operations and impact outcomes.\n\n**Mission**\n\nTo support the long-term recovery of the rainforest, your team is working across several interconnected efforts:\n\n- Restoring vegetation in degraded areas\n- Improving soil stability and water conditions\n- Working with local communities to transition toward sustainable land use practices\n\nYou will move across these efforts as conditions evolve. All key actions must be initiated within the three-day window.\n\nDecisions must balance:\n\n- Time constraints\n- Limited resources\n- Environmental uncertainty\n- Stakeholder priorities"
+            },
+            {
+              "type": "reorder",
+              "prompt": "Based on the mission brief, drag and drop the actions below to adjust their priority:",
+              "options": [
+                { "id": "O1", "text": "Learn more about the rainforest ecosystem, including the factors that influence successful restoration outcomes." },
+                { "id": "O2", "text": "Gather additional information about the incoming weather conditions and how they may impact planned activities." },
+                { "id": "O3", "text": "Focus on building strong working relationships and alignment within your team." },
+                { "id": "O4", "text": "Take time to understand your team members' perspectives on priorities, risks, and potential approaches." }
+              ]
+            },
+            {
+              "type": "narrative",
+              "body": "As your team reviews background materials and begins discussing the work, they identify several key considerations:\n\n- Successful reforestation depends on maintaining stable soil conditions and appropriate moisture levels\n- Heavy rainfall may lead to erosion and the displacement of newly planted vegetation\n- Long-term ecosystem recovery depends on habitat continuity and reducing ongoing human disruption\n\nDuring the discussion:\n\n- One team member notes that local farmers may resist changes to land use, particularly if these changes affect their income or access to land, and believes this may become a significant challenge\n- Another team member expresses enthusiasm about working collaboratively and values having the opportunity to contribute ideas and perspectives\n\nYou join the conversation as the team continues aligning on its approach."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "While the team is working to develop a restoration plan, an updated weather report suggests that rainfall may arrive earlier than expected and could affect key restoration areas.\n\nThe team appears increasingly distracted, with some members focusing on potential risks rather than continuing progress on the plan.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Encourage the team to maintain focus on completing the most critical components of the plan first, and revisit potential risks and contingency options afterward. Given the limited time available, maintaining momentum is important and the forecast may still change." },
+                { "id": "B", "text": "Take time to acknowledge the team's concerns and create space for an open discussion about the potential risks. By addressing these uncertainties directly, the team may be able to regain focus and move forward more effectively." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "You guide the team back toward the immediate planning priorities and reinforce the importance of maintaining progress within the limited timeframe. The team resumes work, though some members continue to express concern about the potential impact of the changing weather conditions, which occasionally affects focus.",
+                "B": "You pause the planning session to allow the team to share concerns and discuss possible implications of the updated forecast. This conversation helps clarify key risks and assumptions, and the team gradually regains focus, although some time has been taken away from immediate planning activities."
+              }
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "As the team continues its planning discussion, you observe that some members are actively contributing ideas and shaping the direction of the conversation, while others—despite having relevant experience—remain relatively quiet.\n\nGiven the complexity of the situation and the range of expertise within the team, how the discussion is managed may influence both the quality of ideas and the pace of progress.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Step in to guide the discussion more directly toward the team's primary objectives and immediate priorities. Given the complexity of the situation, maintaining a focused and efficient discussion may help the team make timely progress." },
+                { "id": "B", "text": "Call attention to the fact that some team members have relevant experience that has not yet been shared, and invite them to contribute their perspectives. Ensuring that a wider range of viewpoints is considered may strengthen the team's approach." },
+                { "id": "C", "text": "Propose dividing the team into smaller working groups, with more vocal members leading separate discussions. This may allow ideas to be generated more quickly, though it may require additional coordination later." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "You help structure the discussion around key priorities, which keeps the conversation focused and efficient. The team continues to make progress, though some perspectives may not be fully explored in the interest of maintaining pace.",
+                "B": "You invite quieter team members to share their insights, which broadens the discussion and introduces additional considerations that had not yet been raised. While this adds depth to the conversation, it also slows the pace of progress.",
+                "C": "The team splits into smaller groups, allowing ideas to be generated more quickly within each group. However, bringing these ideas together into a cohesive plan requires additional discussion and alignment."
+              }
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "The team identifies that reducing land clearing in certain areas will significantly improve restoration outcomes. However, local farmers rely on these areas for their livelihoods and have expressed concerns about any restrictions.\n\nA meeting has been scheduled with the farmers to discuss potential next steps and reach an agreement.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Begin the discussion by asking farmers to share their concerns, priorities, and constraints in more detail. Developing a deeper understanding of their perspective may help build trust and create a more effective path forward." },
+                { "id": "B", "text": "Emphasize the urgency of the environmental situation and clearly communicate the risks associated with continued land clearing. By ensuring that farmers understand the stakes, they may be more willing to adapt their practices in the short term." },
+                { "id": "C", "text": "Propose a structured plan in which land clearing is reduced by a defined percentage over the next three days, with the possibility of adjusting activities in the following weeks. Establishing a clear plan may help the team move forward efficiently." },
+                { "id": "D", "text": "Explore whether alternative land areas or income-generating activities could be made available to farmers, allowing them to maintain their livelihoods while reducing impact on the restoration zones." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "You invite farmers to share their perspectives, leading to a more detailed understanding of their concerns around income stability, land access, and short-term risks. The conversation helps build rapport, though additional work is needed to translate these insights into a concrete plan.",
+                "B": "You clearly communicate the urgency of the environmental challenges and the potential long-term consequences of continued land clearing. While the message is understood, some farmers appear hesitant, and alignment on immediate actions remains uncertain.",
+                "C": "You present a structured proposal that outlines a clear path forward. This provides direction for the discussion, though some farmers question whether the proposed reductions are practical given their current constraints.",
+                "D": "You explore alternative options that could allow farmers to maintain their livelihoods while reducing pressure on the restoration areas. This opens up new possibilities, but also introduces additional questions around feasibility, cost, and implementation."
+              }
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "As the team continues its work, updated environmental readings suggest that the approaching rainfall is already beginning to affect conditions in the area.\n\nPreliminary data indicates changes in:\n\n- Soil moisture levels\n- Sediment movement across restoration zones\n- Water runoff patterns from nearby slopes\n\nThese factors are all critical to the success of early restoration efforts.\n\nSome team members suggest that the current data is too limited and may not accurately reflect rapidly changing conditions. Others believe that the team should act quickly based on the information already available.\n\nWith limited time and evolving conditions, the team must decide how to proceed.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Suggest reaching out to external environmental specialists who have worked in similar rainforest conditions. Their expertise may help interpret the available data more effectively and guide the team's next steps." },
+                { "id": "B", "text": "Recommend setting up real-time monitoring of key environmental indicators so the team can continuously adjust its approach as conditions change. Given the uncertainty, static data may not be sufficient for decision-making." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "You suggest involving external specialists to help interpret the available data. While this provides valuable insights and helps the team better understand the situation, coordinating with additional experts takes time and slows immediate decision-making.",
+                "B": "The team shifts toward real-time monitoring, reorganizing responsibilities and deploying available tools to track changing conditions. This allows for more adaptive decision-making, though it introduces additional complexity and delays some planned activities."
+              }
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "As monitoring continues, the team discovers that certain soil compositions in the restoration areas are more prone to erosion than initially expected. However, the team does not have sufficient expertise to fully understand why some areas are more affected than others.\n\nAt the same time, rainfall patterns continue to shift, and sediment is beginning to accumulate in areas previously identified as high-priority for planting.\n\nThe team must decide how to respond to this new information while continuing to make progress.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Suggest bringing in local environmental experts or researchers who may be able to explain the underlying causes of soil instability. A deeper understanding could help the team develop a more effective long-term approach." },
+                { "id": "B", "text": "Recommend that the team continue moving forward with the existing plan, focusing on execution. Given the limited time, it may be more practical to address issues reactively rather than pausing for additional analysis." },
+                { "id": "C", "text": "Propose implementing temporary protective measures—such as barriers or drainage adjustments—in selected areas to reduce erosion while the team continues to gather more information." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "You suggest engaging local experts to better understand the soil dynamics. This brings valuable insights, though coordinating with external parties takes time and temporarily shifts focus away from immediate execution.",
+                "B": "The team continues executing the existing plan despite the uncertainties. Progress is maintained in the short term, though some risks remain unaddressed and may require attention later.",
+                "C": "The team implements temporary protective measures in priority areas, reducing immediate erosion risks. However, these solutions require ongoing monitoring and adjustment as environmental conditions continue to change."
+              }
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "As conditions evolve, sediment levels in several planned restoration zones increase significantly. The team realizes that some of the originally selected areas may no longer be suitable for immediate planting.\n\nAt the same time, time is running short within the three-day window, and resources are already allocated based on the initial plan.\n\nThe team must now reassess how to proceed under these changing conditions.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Suggest reevaluating which areas are most suitable for restoration given the current environmental conditions, even if this requires adjusting the original plan and reallocating resources." },
+                { "id": "B", "text": "Take a structured approach by outlining a clear revised plan and assigning responsibilities, while incorporating input from team members as needed. The situation calls for coordinated and decisive action." },
+                { "id": "C", "text": "Propose holding a focused problem-solving session with the team to collectively reassess the situation and identify the best path forward. Leveraging the team's combined expertise may lead to stronger outcomes." },
+                { "id": "D", "text": "Encourage the team to pause and reflect on the current challenges, inviting open input from all members before making a decision. While this may take additional time, it may help ensure alignment." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "The team revisits the map and identifies alternative areas that may be more suitable under current conditions. This leads to a shift in resource allocation and timelines, requiring adjustments across multiple workstreams.",
+                "B": "You establish a structured plan and assign responsibilities, helping the team move forward in a coordinated manner. While this creates clarity, some team members feel that additional discussion may have uncovered further considerations.",
+                "C": "The team engages in a focused problem-solving session, bringing forward a range of ideas and perspectives. This leads to a more comprehensive understanding of the situation, though it takes time to align on next steps.",
+                "D": "The team pauses to reflect and share perspectives on the evolving situation. This fosters alignment and openness, though it delays immediate action during a time-sensitive phase."
+              }
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "As part of the broader restoration effort, the team begins investigating potential sources of environmental degradation affecting the rainforest.\n\nPreliminary findings suggest that soil and water quality may be impacted by a combination of:\n\n- Agricultural runoff\n- Small-scale logging activities\n- Nearby infrastructure development\n\nThis issue is also of concern to local communities, as it may affect long-term land productivity and livelihoods.\n\nThe team must decide how to engage with the community to better understand and address these challenges.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Reassure community members that improving environmental conditions is a top priority for the team. Building trust may help establish a stronger long-term partnership." },
+                { "id": "B", "text": "Ask community members to share more detailed information about local activities, land use patterns, and recent changes. These insights may help the team more quickly identify likely sources of impact." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "You emphasize the team's commitment to improving environmental conditions, which helps build trust and goodwill with the community. While this strengthens relationships, additional effort is still needed to gather actionable insights.",
+                "B": "Community members provide detailed context about local practices and recent developments, helping the team narrow down potential sources of environmental impact. This adds valuable direction, though it also introduces additional data to process and validate."
+              }
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "With limited time remaining in the three-day window, your team must make meaningful progress on improving environmental conditions in the rainforest.\n\nOngoing analysis suggests that environmental degradation is likely driven by a combination of:\n\n- Agricultural runoff\n- Logging activity\n- Infrastructure-related disruption\n\nWhile all factors appear relevant, there is not enough time to address everything simultaneously.\n\nThe team looks to you to help determine how to prioritize the next steps.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Acknowledge the difficulty of the situation with the team and create space to regroup before making a decision. Given the complexity and pressure, it may be important to ensure the team is aligned before proceeding." },
+                { "id": "B", "text": "Suggest selecting one likely contributing factor and beginning focused action there. With time constraints, it may be more effective to make progress in one area rather than delaying for further analysis." },
+                { "id": "C", "text": "Recommend continuing to analyze available data until a single primary source of impact can be identified. Acting without sufficient clarity may lead to ineffective or misdirected efforts." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "You take time to acknowledge the pressure the team is facing and allow space for discussion. This helps the team regain a sense of alignment, though it delays immediate action during a critical period.",
+                "B": "The team selects one likely factor to address and begins assigning responsibilities. This creates early momentum, though some team members remain concerned that the decision is based on incomplete information.",
+                "C": "The team continues analyzing available data in search of a clearer answer. While this may improve confidence in the decision, it limits the amount of action taken within the available timeframe."
+              }
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "As the team begins acting on one identified factor, members of the local community raise concerns about the potential impact of the proposed actions on their livelihoods and daily activities.\n\nWhile the team has made initial progress, continued implementation will require some level of community support.\n\nYou must now decide how to proceed in light of these concerns.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Clearly explain the plan to the community, including the expected outcomes, risks, and rationale. Providing transparency may help build understanding and support for timely action." },
+                { "id": "B", "text": "Revise the plan to better reflect community concerns, even if this reduces its effectiveness. A more acceptable plan may be easier to implement." },
+                { "id": "C", "text": "Invite members of the community to collaborate directly with the team in shaping the next phase of the plan. While this may take additional time, it could lead to stronger alignment." },
+                { "id": "D", "text": "Ask community members to share their concerns in more detail before making any changes. A deeper understanding may help inform a more balanced approach." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "You walk the community through the plan, outlining the rationale and expected outcomes. While some concerns remain, the clarity helps build enough understanding to continue moving forward.",
+                "B": "You adjust the plan to better reflect community concerns. This improves acceptance, though some team members note that the revised approach may reduce potential impact.",
+                "C": "You involve community members more directly in shaping the plan. This strengthens engagement and trust, though it requires additional time and coordination during a time-sensitive phase.",
+                "D": "You gather more detailed input from the community, gaining a clearer picture of their concerns and priorities. This provides useful context, though it delays immediate decision-making."
+              }
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "Looking beyond immediate actions, your team must decide how to allocate remaining effort toward longer-term impact.\n\nTwo primary opportunities have been identified:\n\n- Promoting sustainable land-use practices among local farmers\n- Educating the community on environmental conservation and long-term ecosystem health\n\nBoth approaches require engagement with the community and have the potential to influence outcomes over time.\n\nThe team must now determine how to approach this decision.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Ask the team to discuss the two approaches in depth, exploring the potential benefits and challenges of each. A shared understanding may help guide the decision." },
+                { "id": "B", "text": "Propose developing a structured framework to evaluate each option based on criteria such as environmental impact, feasibility, and community readiness. A more analytical approach may support better decision-making." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "The team engages in a detailed discussion, exploring different perspectives on the two approaches. This helps surface important considerations, though it takes time to reach alignment.",
+                "B": "The team begins outlining criteria and scoring each option based on expected impact and feasibility. Some members suggest incorporating additional factors, such as community trust and long-term engagement, before finalizing the evaluation."
+              }
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "Your team is preparing to present its findings and proposed plan to the local community and other stakeholders.\n\nAn initial draft of the presentation has been created based on the team's research and analysis. However, the material is highly detailed and structured similarly to a technical report.\n\nGiven that the audience includes individuals with varying levels of familiarity with environmental and technical concepts, it is important that the presentation is clear and accessible.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Suggest reorganizing the presentation into a clearer structure with a more intuitive flow. Simplifying the narrative may make it easier for the audience to follow." },
+                { "id": "B", "text": "Acknowledge the team's effort and maintain the current structure, trusting that the team's expertise and passion will come through during the presentation." },
+                { "id": "C", "text": "Propose conducting an internal review focused specifically on clarity and communication, ensuring that all content can be explained in a straightforward way if needed." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "The team restructures the presentation into a clearer and more accessible format, improving overall flow. Some sections may still require simplification, but the narrative is easier to follow.",
+                "B": "The presentation remains detailed and technically structured. While it reflects the team's depth of work, some content may be challenging for a broader audience to fully understand.",
+                "C": "The team conducts a focused review of the presentation, refining language and improving clarity across sections. This strengthens overall communication, though it requires additional time before finalization."
+              }
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "steps": [
+            {
+              "type": "pick-one",
+              "prompt": "As the team finalizes the presentation, new environmental data continues to emerge. Some team members believe the latest information should be incorporated immediately, while others feel that doing so may create confusion or delay delivery.\n\nWith stakeholders relying on your team's recommendations, it is important to present a clear and unified message.\n\nSelect one of the following courses of action:",
+              "options": [
+                { "id": "A", "text": "Take time to listen to team members' concerns and provide reassurance, ensuring that everyone feels heard before making a final decision." },
+                { "id": "B", "text": "Suggest proceeding with the current version of the presentation and sharing updates later if the new data significantly changes the conclusions." },
+                { "id": "C", "text": "Recommend selectively updating parts of the presentation to reflect the most relevant new information, balancing accuracy with clarity." },
+                { "id": "D", "text": "Bring the team together to work through the differences and reach agreement on how the new data should be incorporated before finalizing the presentation." }
+              ]
+            },
+            {
+              "type": "outcome",
+              "variants": {
+                "A": "You create space for team members to express their perspectives and concerns. This helps build alignment and trust, though it takes additional time as the team works toward a shared position.",
+                "B": "The team proceeds with the current presentation, ensuring timely delivery. While this maintains clarity and momentum, some members remain concerned about the absence of the latest data.",
+                "C": "The team updates selected sections of the presentation to reflect the most critical new information. This allows for a more adaptive response, though it requires careful communication to maintain clarity.",
+                "D": "The team works through differing viewpoints and aligns on how to incorporate the new data. This results in a more unified message, though it extends the time needed to finalize the presentation."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

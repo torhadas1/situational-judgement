@@ -1,0 +1,14 @@
+.sjs-progress {
+  text-align: center;
+  margin-top: 32px;
+}
+.sjs-progress-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.sjs-progress-counter {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}

@@ -1,0 +1,70 @@
+.sjs-result-card {
+  background: #FFFFFF;
+  color: #1E2E47;
+  border-radius: 8px;
+  padding: 32px 40px;
+  margin: auto;
+  width: 720px;
+  max-height: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sjs-result-title {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 22px;
+}
+
+.sjs-result-table-wrap {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.sjs-result-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sjs-result-table th,
+.sjs-result-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #E0E3E9;
+  text-align: left;
+}
+
+.sjs-result-table th {
+  background: #F5F6F8;
+  font-weight: 700;
+}
+
+.sjs-result-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sjs-result-btn {
+  background: #1E2E47;
+  color: #FFFFFF;
+  padding: 10px 24px;
+  border-radius: 4px;
+  min-width: 120px;
+  font-weight: 500;
+  transition: transform 0.1s ease;
+}
+
+.sjs-result-btn:active { transform: scale(0.98); }
+
+.sjs-result-btn-secondary {
+  background: transparent;
+  color: #1E2E47;
+  border: 1px solid #1E2E47;
+}
+
+.sjs-result-table-wrap::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+.sjs-result-table-wrap {
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
