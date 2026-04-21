@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/situational-judgement/static/css/main.462ba9c7.css",
+    "main.js": "/situational-judgement/static/js/main.0f147ee5.js",
+    "index.html": "/situational-judgement/index.html",
+    "main.462ba9c7.css.map": "/situational-judgement/static/css/main.462ba9c7.css.map",
+    "main.0f147ee5.js.map": "/situational-judgement/static/js/main.0f147ee5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.462ba9c7.css",
+    "static/js/main.0f147ee5.js"
+  ]
+}
