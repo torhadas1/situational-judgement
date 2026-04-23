@@ -38,3 +38,10 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.sjs-card-footer-inline {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+  padding-bottom: 4px;
+}

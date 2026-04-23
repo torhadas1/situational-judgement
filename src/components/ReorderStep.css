@@ -4,7 +4,22 @@
   gap: 10px;
 }
 
+.sjs-reorder-item-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sjs-reorder-pos {
+  width: 22px;
+  font-weight: 700;
+  flex-shrink: 0;
+  color: var(--text);
+  text-align: center;
+}
+
 .sjs-reorder-row {
+  flex: 1;
   display: flex;
   align-items: center;
   background: var(--option-bg);
@@ -16,11 +31,5 @@
 }
 
 .sjs-reorder-row:active { cursor: grabbing; }
-
-.sjs-reorder-pos {
-  width: 28px;
-  font-weight: 700;
-  flex-shrink: 0;
-}
 
 .sjs-reorder-text { flex: 1; line-height: 1.4; }

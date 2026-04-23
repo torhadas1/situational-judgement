@@ -16,10 +16,10 @@
               "type": "reorder",
               "prompt": "Based on the mission brief, drag and drop the actions below to adjust their priority:",
               "options": [
-                { "id": "O1", "text": "Learn more about the rainforest ecosystem, including the factors that influence successful restoration outcomes." },
-                { "id": "O2", "text": "Gather additional information about the incoming weather conditions and how they may impact planned activities." },
-                { "id": "O3", "text": "Focus on building strong working relationships and alignment within your team." },
-                { "id": "O4", "text": "Take time to understand your team members' perspectives on priorities, risks, and potential approaches." }
+                { "id": "A", "text": "Learn more about the rainforest ecosystem, including the factors that influence successful restoration outcomes." },
+                { "id": "B", "text": "Gather additional information about the incoming weather conditions and how they may impact planned activities." },
+                { "id": "C", "text": "Focus on building strong working relationships and alignment within your team." },
+                { "id": "D", "text": "Take time to understand your team members' perspectives on priorities, risks, and potential approaches." }
               ]
             },
             {

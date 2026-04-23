@@ -28,7 +28,7 @@ export default function Timer({ startedAt, durationMinutes }) {
                 strokeLinecap="round"
                 strokeDasharray={CIRCUMFERENCE}
                 strokeDashoffset={dashOffset}
-                transform="rotate(-90 30 30)" />
+                transform="scale(-1,1) translate(-60,0) rotate(-90,30,30)" />
         {remainingSec > 0 ? (
           <>
             <text x="30" y="25" textAnchor="middle" dominantBaseline="central"

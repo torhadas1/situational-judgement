@@ -10,7 +10,7 @@ import {
 import { CSS } from "@dnd-kit/utilities";
 import "./ReorderStep.css";
 
-function SortableRow({ option, position }) {
+function SortableRow({ option }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: option.id });
   const style = {
     transform: CSS.Transform.toString(transform),
@@ -25,7 +25,6 @@ function SortableRow({ option, position }) {
       {...attributes}
       {...listeners}
     >
-      <div className="sjs-reorder-pos">{position}</div>
       <div className="sjs-reorder-text">{option.text}</div>
     </div>
   );
@@ -65,7 +64,10 @@ export default function ReorderStep({ step, answer, onChange }) {
         <SortableContext items={order} strategy={verticalListSortingStrategy}>
           <div className="sjs-reorder-list">
             {order.map((id, idx) => (
-              <SortableRow key={id} option={byId[id]} position={idx + 1} />
+              <div key={id} className="sjs-reorder-item-wrap">
+                <div className="sjs-reorder-pos">{idx + 1}</div>
+                <SortableRow option={byId[id]} />
+              </div>
             ))}
           </div>
         </SortableContext>
