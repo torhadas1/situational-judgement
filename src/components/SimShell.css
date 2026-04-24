@@ -28,9 +28,10 @@
 
 .sjs-card-body {
   flex: 1;
-  padding: 20px 24px;
+  padding: 20px 24px 12px;
   overflow-y: auto;
   line-height: 1.5;
+  scrollbar-gutter: stable;
 }
 
 .sjs-card-footer {
@@ -42,6 +43,5 @@
 .sjs-card-footer-inline {
   display: flex;
   justify-content: flex-end;
-  padding-top: 16px;
-  padding-bottom: 4px;
+  padding-top: 12px;
 }
