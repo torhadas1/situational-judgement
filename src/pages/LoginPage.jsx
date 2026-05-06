@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useSim } from "../context/SimContext";
 import "./LoginPage.css";
 
-const USERNAME = "CaseMentor7412";
-const PASSWORD = "APT-SIM-rTk2k25";
+const USERNAME = "CaseMentor3917";
+const PASSWORD = "SFL-SIM-5z3p7G";
 
 export default function LoginPage() {
   const [authenticated, setAuthenticated] = useState(
@@ -74,7 +74,7 @@ function SessionManager() {
   return (
     <div className="app-frame">
       <div className="sjs-login-card">
-        <h1 className="sjs-login-title">Situational Judgement Simulation</h1>
+        <h1 className="sjs-login-title">Sustainable Futures Lab</h1>
         {hasInProgress && (
           <>
             <p>You have a simulation in progress.</p>
